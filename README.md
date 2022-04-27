@@ -11,24 +11,19 @@ Entendendo a estrutura do projeto "PROVA TECNICA QA AUTOMAÇÃO - CYPRESS":
 
 ---------------------
 
-Para configurar o cypress:
+Para rodar o projeto:
+- Instalar o Node.JS no site oficial deles (https://nodejs.org/en/download/);
+- Instalar o Cmder (com git for windows já integrado) ou prompt de sua preferência - para chamar o Cypress via comando; 
+- VSCode ou outra ferramenta de preferência para análise do código.
+
+No terminal do Cmder, clonar o projeto:
+- git clone https://github.com/mrlcast/PROVA-TECNICA-QA-AUTOMACAO---CYPRESS.git
+
+Depois, execute o comando: 
+- "npx cypress open" para abrir a interface do Cypress ou: 
+- "npx cypress run" para que o cypress rode os testes em background. 
+
+---------------------
+
+Site para configuração do cypress:
 https://softdesign.com.br/blog/cypress_passo_a_passo_para_comecar_a_usar#:~:text=Iniciando%20um%20projeto%20com%20o,Ele%20criar%C3%A1%20o%20arquivo%20package.
-
-Iniciando um projeto com o Cypress
-Para um Projeto Cypress, antes de qualquer coisa, é preciso preparar o ambiente com:
-- Node.JS
-- Visual Studio Code (VS Code). 
-
-Em seguida, no console, execute o comando: code. para abrir o projeto no VS Code.
-
-Com o projeto, iremos abrir o terminal do VS Code e executar o comando: 
-
-npm install cypress
-
-Que é o comando para instalar o Cypress no nosso projeto. 
-
-Em seguida, será possível visualizar a versão instalada do framework no arquivo package.json, e nele iremos adicionar o script: 
-“cypress:open”:”cypress open”.
-
-No terminal do VS Code, dentro da pasta do projeto baixado, execute o comando: 
-npm run cypress:open. 
