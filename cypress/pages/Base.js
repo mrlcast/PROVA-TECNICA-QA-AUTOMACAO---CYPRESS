@@ -6,13 +6,14 @@ class Base {
     }
     //Aqui o código digita o nome do produto e clica em pesquisar
     search() {
-        cy.get('input[name="field-keywords"]').type("tenis adidas")
+        cy.get('input[name="field-keywords"]').type("adidas Originals Tênis masculino Top Ten")
         cy.get('input[id="nav-search-submit-button"]').click()
     }
     //Aqui o código seleciona o produto e o tamanho dele
     select(){
-        cy.get('[data-asin="B07ZHXCZPT"] > .sg-col-inner > .s-widget-container > [data-component-type="s-impression-logger"] > .s-featured-result-item > .s-card-container > .a-spacing-base > .a-spacing-small > .s-title-instructions-style > .a-size-mini > .a-link-normal > .a-size-base-plus').click()    
-        cy.get('#native_dropdown_selected_size_name').select('12')
+        cy.get('[data-asin="B07ZHXP3NJ"] > .sg-col-inner > .s-widget-container > [data-component-type="s-impression-logger"] > .s-featured-result-item > .s-card-container > .a-spacing-base > .s-product-image-container > .s-image-padding > .rush-component > .a-link-normal > .a-section > .s-image').click()    
+        cy.wait(4000)
+        cy.get('#size_name_5 > .a-button-inner > .a-button-input').click()
     }    
     //Aqui o código adiciona ao carrinho e entra no carrinho
     addToCart(){
